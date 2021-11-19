@@ -4,7 +4,9 @@ Watch the linux performance and see the alarm if threshold crossed.
 
 ## Run by docker images:
 
-1. `docker run -it goalarm:1.0`
+https://hub.docker.com/r/gauravds/goalarm
+
+1. `docker run -it gauravds/goalarm:1.0`
 1. `vmstat 1 | ./main` or `vmstat 1 | go run main.go`
 
 ## Command line arguments available as:
@@ -34,4 +36,8 @@ or
 
 ## Build docker image locally:
 
-`docker build . --no-cache -t goalarm:1.0`
+`docker build . --no-cache -t gauravds/goalarm:1.0`
+
+## Publish docker image:
+
+`docker push gauravds/goalarm:<tagname>`
