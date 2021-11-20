@@ -40,7 +40,7 @@ func main() {
 	}
 }
 
-//alarm file
+//should move to alarm.go
 
 type Alarm struct {
 	watch            string
@@ -116,6 +116,7 @@ func (a *Alarm) panic(data int) {
 	fmt.Printf("PANIC: '%s' threshold value reached at %d from last %v with max %d attempts\n", a.watch, data, time.Since(a.t), a.thresholdCounter)
 }
 
+//should move to utils.go
 func parseString(data string) []string {
 	result := []string{}
 	arr := strings.Split(data, " ")
